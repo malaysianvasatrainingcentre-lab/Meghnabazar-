@@ -1,182 +1,135 @@
 <!DOCTYPE html>
 <html lang="bn">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Meghnabazar - মেঘনা বাজার</title>
-<style>
-body {.
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f4f7f4;
-  color: #222;
-}
-header {
-  background: #087c45;
-  color: white;
-  padding: 25px 15px;
-  text-align: center;
-}
-header h1 { margin: 0; font-size: 30px; }
-nav {
-  background: #075b35;
-  padding: 13px;
-  text-align: center;
-}
-nav a {
-  color: white;
-  text-decoration: none;
-  margin: 10px;
-}<!DOCTYPE html>
-<html lang="bn">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Meghnabazar - মেঘনা বাজার</title>
-<style>
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f4f7f4;
-  color: #222;
-}
-header {
-  background: #087c45;
-  color: white;
-  padding: 25px 15px;
-  text-align: center;
-}
-header h1 { margin: 0; font-size: 30px; }
-nav {
-  background: #075b35;
-  padding: 13px;
-  text-align: center;
-}
-nav a {
-  color: white;
-  text-decoration: none;
-  margin: 10px;
-}
-.hero {
-  text-align: center;
-  padding: 55px 15px;
-  background: #e0f4e8;
-}
-.hero h2 { color: #087c45; }
-.btn {
-  display: inline-block;
-  background: #087c45;
-  color: white;
-  padding: 12px 25px;
-  text-decoration: none;
-  border-radius: 6px;
-}
-section {
-  padding: 25px 15px;
-  text-align: center;
-}
-footer {
-  background: #075b35;
-  color: white;
-  text-align: center;
-  padding: 20px;
-}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meghna Bazar - মেঘনা বাজার</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5fff5;
+      color: #263328;
+    }
+    header {
+      background: #087b3c;
+      color: white;
+      text-align: center;
+      padding: 25px 15px;
+    }
+    .logo {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid white;
+    }
+    header h1 { margin: 10px 0 5px; }
+    nav {
+      background: #05632f;
+      padding: 13px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 12px;
+      font-weight: bold;
+    }
+    .hero {
+      text-align: center;
+      padding: 55px 15px;
+      background: #e2f6e7;
+    }
+    .hero h2 { color: #087b3c; }
+    .section {
+      max-width: 900px;
+      margin: auto;
+      padding: 30px 18px;
+      text-align: center;
+    }
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+    .product {
+      background: white;
+      border: 1px solid #d5e8d9;
+      border-radius: 10px;
+      padding: 20px;
+      width: 220px;
+    }
+    .product h3 { color: #087b3c; }
+    footer {
+      background: #05632f;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    @media (max-width: 480px) {
+      nav a { margin: 0 6px; font-size: 14px; }
+    }
+  </style>
 </head>
 <body>
 
 <header>
-<h1>🛒 মেঘনা বাজার</h1>
-<p>আপনার বিশ্বস্ত অনলাইন বাজার</p>
+  <img src="logo.jpg" alt="Meghna Bazar Logo" class="logo"
+       onerror="this.style.display='none'">
+  <h1>🛒 Meghna Bazar</h1>
+  <p>আপনার বিশ্বস্ত অনলাইন বাজার</p>
 </header>
 
 <nav>
-<a href="#">হোম</a>
-<a href="#about">আমাদের সম্পর্কে</a>
-<a href="#contact">যোগাযোগ</a>
+  <a href="#home">হোম</a>
+  <a href="#about">আমাদের সম্পর্কে</a>
+  <a href="#products">পণ্য</a>
+  <a href="#contact">যোগাযোগ</a>
 </nav>
 
-<div class="hero">
-<h2>স্বাগতম Meghnabazar.com-এ</h2>
-<p>আপনার পছন্দের পণ্য খুঁজুন এক জায়গায়।</p>
-<a class="btn" href="#contact">যোগাযোগ করুন</a>
-</div>
-
-<section id="about">
-<h2>আমাদের সম্পর্কে</h2>
-<p>মেঘনা বাজার একটি অনলাইন মার্কেটপ্লেস।
-এখানে ভবিষ্যতে বিভিন্ন ধরনের পণ্য পাওয়া যাবে।</p>
+<section class="hero" id="home">
+  <h2>স্বাগতম Meghna Bazar-এ</h2>
+  <p>মানসম্মত পণ্য ও মসলার জন্য আমাদের সঙ্গে থাকুন।</p>
 </section>
 
-<section id="contact">
-<h2>যোগাযোগ</h2>
-<p>Email: meghnabazar2026@gmail.com</p>
+<section class="section" id="about">
+  <h2>আমাদের সম্পর্কে</h2>
+  <p>
+    Meghna Bazar একটি অনলাইন বাজারের উদ্যোগ।
+    আমরা হলুদের গুঁড়া, মরিচের গুঁড়া এবং বিভিন্ন ধরনের
+    মসলা নিয়ে কাজ করার পরিকল্পনা করছি।
+    আমাদের লক্ষ্য সারা বাংলাদেশের মানুষের কাছে পণ্য পৌঁছে দেওয়া।
+  </p>
+</section>
+
+<section class="section" id="products">
+  <h2>আমাদের পণ্য</h2>
+  <div class="products">
+    <div class="product">
+      <h3>হলুদের গুঁড়া</h3>
+      <p>Meghna Bazar</p>
+    </div>
+    <div class="product">
+      <h3>মরিচের গুঁড়া</h3>
+      <p>Meghna Bazar</p>
+    </div>
+    <div class="product">
+      <h3>বিভিন্ন মসলা</h3>
+      <p>Meghna Bazar</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="contact">
+  <h2>যোগাযোগ</h2>
+  <p>ইমেইল: meghnabazar2026@gmail.com</p>
 </section>
 
 <footer>
-<p>© 2026 Meghnabazar. All Rights Reserved.</p>
-</footer>
-
-</body>
-</html>
-.hero {
-  text-align: center;
-  padding: 55px 15px;
-  background: #e0f4e8;
-}
-.hero h2 { color: #087c45; }
-.btn {
-  display: inline-block;
-  background: #087c45;
-  color: white;
-  padding: 12px 25px;
-  text-decoration: none;
-  border-radius: 6px;
-}
-section {
-  padding: 25px 15px;
-  text-align: center;
-}
-footer {
-  background: #075b35;
-  color: white;
-  text-align: center;
-  padding: 20px;
-}
-</style>
-</head>
-<body>
-
-<header>
-<h1>🛒 মেঘনা বাজার</h1>
-<p>আপনার বিশ্বস্ত অনলাইন বাজার</p>
-</header>
-
-<nav>
-<a href="#">হোম</a>
-<a href="#about">আমাদের সম্পর্কে</a>
-<a href="#contact">যোগাযোগ</a>
-</nav>
-
-<div class="hero">
-<h2>স্বাগতম Meghnabazar.com-এ</h2>
-<p>আপনার পছন্দের পণ্য খুঁজুন এক জায়গায়।</p>
-<a class="btn" href="#contact">যোগাযোগ করুন</a>
-</div>
-
-<section id="about">
-<h2>আমাদের সম্পর্কে</h2>
-<p>মেঘনা বাজার একটি অনলাইন মার্কেটপ্লেস।
-এখানে ভবিষ্যতে বিভিন্ন ধরনের পণ্য পাওয়া যাবে।</p>
-</section>
-
-<section id="contact">
-<h2>যোগাযোগ</h2>
-<p>Email: meghnabazar2026@gmail.com</p>
-</section>
-
-<footer>
-<p>© 2026 Meghnabazar. All Rights Reserved.</p>
+  <p>© 2026 Meghna Bazar. সর্বস্বত্ব সংরক্ষিত।</p>
 </footer>
 
 </body>
